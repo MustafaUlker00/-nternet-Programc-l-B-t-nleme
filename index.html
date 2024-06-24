@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mustafa Ülker's Portfolyo</title>
+    <link rel="stylesheet" href="style.css ">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body id="body">
+    <div class="header" id="header">
+        <div class="logobar" id="logobar">
+            <a href="">Mustafa Ülker's Portfolio</a>
+        </div>
+
+        <div class="pages" id="pages">
+            <a href="#home">Anasayfa</a>
+            <a href="#about">Hakkımda</a>
+            <a href="#blog">Blog</a>
+            <a href="#contact">İletişim</a>
+        </div>
+
+        <div class="thema">
+            <button id="themaButton" onclick="toggleTheme()"
+                style="margin-left: 20px; padding: 10px; border: none; cursor: pointer;">
+                <i class="far fa-moon"></i>
+                <i class="far fa-sun"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="content" id="content">
+
+        <div class="home" id="home">
+            <div class="home-background">
+                <img src="background-image-2.jpg">
+            </div>
+            <div class="home-box">
+                <p style="font-size: 500%;">Merhaba,</p>
+                <p style="font-size: 200%;">Ben Mustafa Ülker.</p>
+            </div>
+        </div>
+
+        <div class="about" id="about">
+
+            <div class="about-header">
+
+                <H1>Hakkımda</H1>
+
+            </div>
+
+            <div class="about-text">
+
+                <p>Merhaba! Ben Musta Ülker. Kayseri Üniversitesi'nde Bilgisayar Programcılığı bölümünde öğrenciyim.
+                    Meraklı, yeniliklere açık ve teknolojiye tutkulu biriyim. Kod yazmayı ve yeni projeler üretmeyi
+                    severim. Bilgisayar bilimleri alanında kendimi geliştirmek için sürekli olarak çaba sarf ediyorum.
+                    Yazılım dünyasında daha fazla deneyim kazanmak ve farklı teknolojileri öğrenmek benim için heyecan
+                    verici bir yolculuk. Hem bireysel olarak hem de takım halinde çalışmaktan keyif alırım çünkü farklı
+                    bakış açılarının bir araya gelmesiyle daha yaratıcı çözümler ortaya çıkar. Hedefim, bilgi ve
+                    becerilerimi kullanarak insanların günlük yaşamlarını kolaylaştıracak ve daha verimli hale getirecek
+                    teknolojilere katkıda bulunmak. Gelecekteki kariyerimde hem teknik yeteneklerimi geliştirmeye devam
+                    etmek hem de topluma faydalı çözümler sunmak için çalışacağım.</p>
+
+            </div>
+
+        </div>
+
+        <div class="blog" id="blog">
+            <div class="blog-header">
+                <h2>Blog</h2>
+            </div>
+            <div class="blog-posts">
+                <div class="blog-box">
+                    <div class="box-image">
+                        <img src="news1.jpg">
+                    </div>
+                    <div class="box-header">
+                        <p class="text-header">
+                            Apple, yeni yapay zeka modeli "Apple Intelligence"ı tanıttı
+                        </p>
+                        <a href="news1.html" class="news-link">Devamını oku</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact" id="contact">
+            <div class="contact-header">
+                <h1>İletişim</h1>
+                <p>İşbirliği ve geri dönüşleriniz için aşağıdaki formu kullanabilirsiniz.</p>
+            </div>
+
+            <form action="#" method="post">
+
+                <div class="form-group">
+                    <label for="name">Adınız Soyadınız:</label>
+                    <input type="text" placeholder="Adınız - Soyadınız" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-posta Adresiniz:</label>
+                    <input type="email" placeholder="E-posta Adresiniz" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Mesajınız:</label>
+                    <textarea id="message" placeholder="Mesajınız" name="message" rows="5" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <button value="Gönder">Gönder</button>
+                </div>
+            </form>
+
+        </div>
+
+    </div>
+
+    <div class="footer" id="footer">
+        <p>&copy; 2024 Tüm haklar saklıdır.</p>
+    </div>
+
+    <div class="backToTop" id="backToTop">
+        <a id="backButton" href="#body"><i class="fa-solid fa-up-long"></i></a>
+    </div>
+    <script src="main.js"></script>
+
+</body>
+
+</html>

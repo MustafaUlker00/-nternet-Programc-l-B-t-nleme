@@ -1,0 +1,409 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    user-select: none;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Scroll bar rayını (kanalını) özelleştirme */
+::-webkit-scrollbar-track {
+    background: none;
+    /* Arka plan rengi */
+}
+
+/* Scroll bar başlığını (sürgüyü) özelleştirme */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Hover sırasında scroll bar başlığını özelleştirme */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    /* Hover rengi */
+}
+
+.header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+
+.logobar {
+    width: 50%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.logobar a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+
+}
+
+.pages {
+
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+}
+
+.pages a {
+    text-align: center;
+    color: black;
+    padding: 10px;
+    margin: 10px;
+    text-decoration: none;
+    transition: all .4s ease-in-out;
+}
+
+.pages a:hover {
+    color: white;
+    background-color: black;
+    transition: all .4s ease-in-out;
+
+}
+
+.thema button {
+    background-color: transparent;
+}
+
+.main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.home {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.home-background {
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    position: absolute;
+    opacity: .5;
+
+}
+
+.home-background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: .2;
+}
+
+.home-box {
+    width: 75%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    z-index: 1;
+}
+
+.home-box p {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.about {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-header {
+    width: 50%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-text {
+    width: 75%;
+    height: calc(100% - 20vh);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    line-height: 2rem;
+    word-spacing: 5px;
+}
+
+.blog {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog-header {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog-posts {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 20vh);
+}
+
+.blog-box {
+    width: 400px;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.blog-box:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    transition: all .3s ease-in-out;
+}
+
+.box-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.box-header {
+    width: 100%;
+}
+
+.text-header {
+    font-weight: 700;
+}
+
+.news-link {
+    color: #333;
+    text-decoration: none;
+}
+
+.contact {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact form label {
+    font-weight: bold;
+}
+
+
+.contact form input,
+.contact form textarea,
+.contact form button {
+    width: 300px;
+    font-family: "Poppins", sans-serif;
+    padding: 10px;
+    margin: 10px 0;
+    resize: none;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.contact form button:hover {
+    color: white;
+    background-color: #333;
+    border: none;
+    cursor: pointer;
+}
+
+.footer {
+    width: 100%;
+    font-size: small;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.backToTop {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    animation: hareket .5s infinite alternate;
+}
+
+.backToTop a {
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 100%;
+
+}
+
+@keyframes hareket {
+    0% {
+        bottom: 20px;
+    }
+
+    100% {
+        bottom: 40px;
+    }
+}
+
+/* Tema Modu CSS'i */
+body.light-mode {
+    background-color: white;
+    color: black;
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+.light-mode .header,
+.light-mode .footer {
+    background-color: white;
+    color: black;
+}
+
+.dark-mode .header,
+.dark-mode .header a,
+.dark-mode .footer {
+    background-color: #1c1c1c;
+    color: white;
+}
+
+.light-mode .pages a {
+    color: black;
+}
+
+.dark-mode .pages a {
+    color: white;
+}
+
+.dark-mode .pages a:hover {
+    color: black;
+    background-color: white;
+}
+
+.light-mode .pages a:hover {
+    color: white;
+    background-color: black;
+}
+
+.dark-mode input[type="text"],
+.dark-mode input[type="email"],
+.dark-mode form textarea {
+    background-color: #333;
+    color: white;
+    border: 1px solid #555;
+}
+
+.dark-mode input[type="submit"] {
+    background-color: white;
+    color: black;
+}
+
+.dark-mode input[type="submit"]:hover {
+    background-color: #333;
+    color: white;
+}
+
+/* Light mode için .comment nesnesi */
+body.light-mode .comment {
+    font-weight: bold;
+    color: #333;
+    background-color: #f0f0f0;
+    padding: 5px;
+    border-radius: 5px;
+    transition: all .3s ease-in-out;
+}
+
+body.light-mode .comment:hover {
+    color: white;
+    background-color: #333;
+    transition: all .3s ease-in-out;
+}
+
+/* Dark mode için .comment nesnesi */
+body.dark-mode .comment {
+    font-weight: bold;
+    color: #f0f0f0;
+    background-color: #333;
+    padding: 5px;
+    border-radius: 5px;
+    transition: all .3s ease-in-out;
+}
+
+body.dark-mode .comment:hover {
+    color: #333;
+    background-color: #f0f0f0;
+    transition: all .3s ease-in-out;
+}
